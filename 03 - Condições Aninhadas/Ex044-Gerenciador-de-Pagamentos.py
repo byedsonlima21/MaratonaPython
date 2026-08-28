@@ -21,6 +21,6 @@ elif op == 3:
 elif op == 4:
     print(f'Você ganha um desconto de 1% ao pagar sua compra escolhendo a opção 1.\n'
           f'O valor a ser pago é de {s - ( s * 0.5 / 100)}')
-elif op 1 or 2 or 3 or 4:
+else:
     print('Opção inválida!\n'
           'Escolha entre as opções disponiveis')
