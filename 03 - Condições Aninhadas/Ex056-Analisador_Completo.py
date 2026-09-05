@@ -11,17 +11,21 @@ for c in range(1, 5):
     sx = str(input('Sexo [M/F]: ')).lower().strip()
 
     somaidade += idade
-    if idade >= 18 and sx == 'm':
-        somamaiorm += 1
+    if idade >= 18:
+        if sx == 'm':
+            somamaiorm += 1
+        elif sx == 'f':
+            somamaiorf += 1
+        else:
+            print('Sexo inválido! Digite apenas M ou F.')
 
-    elif idade >= 18 and sx == 'f':
-        somamaiorf += 1
-
-    elif idade < 18 and sx == 'm':
-        somamenorm += 1
-
-    elif idade < 18 and sx == 'f':
-        somamenorf += 1
+    elif idade < 18:
+        if sx == 'm':
+            somamenorm += 1
+        elif sx == 'f':
+            somamenorf += 1
+        else:
+            print('Sexo inválido! Digite apenas M ou F.')
 
 print(f'A média da idade é {somaidade / 4}.')
 print(f'O grupo têm {somamaiorm + somamaiorf} pessoas maiores de idade.')
