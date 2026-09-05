@@ -8,3 +8,6 @@ for i in range(0, len(b)):
     else:
         print('\033[31;40mO que você digitou não é um palíndromo\033[m')
         break
+
+        # exercício difícil, maior dificuldade foi inverter a frase
+        # precise consultar
