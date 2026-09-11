@@ -15,4 +15,4 @@ while cont <= 10:
     a1 = res
     cont += 1
     if cont == 11:
-        print(f'\nACABOU!')
+        print(f'ACABOU!')
