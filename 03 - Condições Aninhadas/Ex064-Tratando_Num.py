@@ -1,10 +1,14 @@
-a = 0
+a = e = 0
 s = []
-e = 0
+
 while a != 999:
-    b = int(input('Digite um número: '))
-    a = b
-    s.append(b)
+    a = int(input('Digite um número: '))
     e += 1
 
-print(f'A soma dos valores é {sum(s) - 999} e você escolheu {e - 1} números.')
+    if a != 999:
+        s.append(a)
+    else:
+        break
+
+
+print(f'A soma dos valores é {sum(s)} e você escolheu {e - 1} números.')
