@@ -1,19 +1,16 @@
-a = int(input("Digite um número: "))
-text = str(input("Deseja continuar? [S/N] : ")).upper().strip()[0]
 x = []
-t = 0
 
-while text != 'N':
-    if text == 'S':
-        x.append(a)
-
-    else:
-        x.append(a)
-        t += 1
-        break
+while True:
     a = int(input("Digite um número: "))
-    text = str(input("Deseja continuar? [S/N] : ")).upper().strip()[0]
     x.append(a)
-    t += 1
+    text = str(input("Deseja continuar? [S/N] : ")).upper().strip()[0]
 
-print(f"Você digitou {t} números e o valor máximo é {max(x)}")
+    while text not in ('S', 'N'):
+        print("Resposta inválida! Por favor, digite apenas S para Sim ou N para Não.")
+        text = input("Deseja continuar? [S/N]: ").strip().upper()
+
+    if text == 'N':
+        break
+
+print(f"Você digitou {len(x)} números e a média é {sum(x)/len(x):.2f}!")
+print(f'E o valor máximo é {max(x)} e O mínimo {min(x)}')
