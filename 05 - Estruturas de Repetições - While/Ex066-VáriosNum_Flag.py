@@ -1,9 +1,10 @@
 a = 0
 l = []
 
-while a != 999:
+while True:
     a = int(input(f'Digite um valor: '))
-    if a != 999:
-        l.append(a)
+    if a == 999:
+        break
+    l.append(a)
 
-print(f'A soma dos valores é {sum(l)} e a média é {sum(l)/len(l)}')
+print(f'A soma dos valores é {sum(l)} e a média é {sum(l)/len(l):.2f}')
