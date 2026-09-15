@@ -3,6 +3,6 @@ while True:
     for c in range(1, 11):
         if num >= 0:
             print(f'{num} x {c:2} = {num * c:2}')
-    else:
-        print(f'Programa finalizado!')
-        break
+        else:
+            print(f'Programa finalizado!')
+            break
