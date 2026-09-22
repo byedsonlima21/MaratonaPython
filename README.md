@@ -22,6 +22,8 @@ O repositório está estruturado de forma lógica, seguindo a trilha de aprendiz
 
 * **06 - Estruturas de Dados - Tuplas:** O início da exploração em variáveis compostas.
 
+* **07 - Estruturas de Dados - Listas** Início da manipulação de listas
+
 *(Novos módulos e desafios serão adicionados conforme eu avançar nas aulas!)*
 
 ## 🛠️ Sobre o Projeto
