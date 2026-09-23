@@ -7,8 +7,8 @@ while True:
     if resp in 'Nn':
         break
 
-print(f'Você digitou {len(num)} elementos.')
 num.sort(reverse=True)
+print(f'Você digitou {len(num)} elementos.')
 print(f'A lista em ordem decrescente: {num}')
 
 if 5 in num:
