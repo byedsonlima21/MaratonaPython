@@ -20,6 +20,7 @@ while True:
             totmen = temp[1]
 
     temp.clear()
+
     resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if resp in 'N':
         break
