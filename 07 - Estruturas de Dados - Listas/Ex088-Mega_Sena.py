@@ -18,5 +18,5 @@ while cont < n:
     jogos.append(lista[:])
     lista.clear()
 
-for c in range(0, n):
-    print(f'Jogo {c+1}: {jogos}')
+for i, c in enumerate(jogos):
+    print(f'Jogo {i+1}: {c}')
