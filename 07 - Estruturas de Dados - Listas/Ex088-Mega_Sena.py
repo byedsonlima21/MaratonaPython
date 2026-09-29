@@ -2,14 +2,15 @@ from random import randint
 
 lista = []
 jogos = []
-cont = 0
+tot = 1
 
 n = int(input("Quantos jogos você quer que eu sorteie? "))
 print(f'Sorteando {n} jogos')
 
-while cont < n:
-    num = [randint(1,60)]
+while tot <= n:
+    cont = 0
     while True:
+        num = randint(1,60)
         if num not in lista:
             lista.append(num)
             cont += 1
@@ -17,6 +18,8 @@ while cont < n:
             break
     jogos.append(lista[:])
     lista.clear()
+
+    tot += 1
 
 for i, c in enumerate(jogos):
     print(f'Jogo {i+1}: {c}')
