@@ -25,7 +25,7 @@ while True:
 print('-=' * 30)
 print(f"{'  TABELA  ':=^60}")
 print('-=' * 30)
-print(f"{'Cod':<5}{'Nome':<18}{'Gols':<29}{'Total':>18}")
+print(f"{'Cod':<5}{'Nome':<18}{'Gols':<29}{'Total':>8}")
 
 for i, v in enumerate(geral):
     print(f'{i+1:<5}{v["Nome"]:<18}{str(v["Gols"]):<29}{v["Total"]:>8}')
