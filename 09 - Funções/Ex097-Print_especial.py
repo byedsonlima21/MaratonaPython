@@ -1,9 +1,14 @@
 def escreva(txt):
-    tam = len(txt)
-    print('-' * (tam * 2))
-    print(f'{'-':<5}{  txt  :^10}{'-':>5}')
-    print('-'* (tam * 2))
+    txt_formatado = f' {txt} '
+    tam = len(txt_formatado) + 10
+    print('-' * tam )
+    print(f'{txt_formatado:-^{tam}}')
+    print('-'* tam )
 
 escreva('Edson Lima')
 print()
-escreva('Adylla Lima')
+escreva('Josue Pereira Lima')
+print()
+escreva('Neymar dos Santos Junior')
+print()
+escreva('Edson Oliveira de Santos Junior')
