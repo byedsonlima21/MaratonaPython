@@ -1,9 +1,13 @@
-def calcular_circulo(raio):
-    a = 3.14 * raio**2
-    print(a)
-def calc_quadrado(l):
-    area = l**2
-    print(area)
+def cal_area():
+    c = float(input("Digite o comprimento (m): "))
+    l = float(input("Digite o largura (m): "))
+    area = c * l
+    print(f'A área do terreno é {c} x {l} é de {area:.2f}m²')
 
-calcular_circulo(5)
-calc_quadrado(2)
+def cabecalho():
+    print('-=' * 20)
+    print(f'{'=' * 5:<10}{" Cálculo do terreno ":^10}{'=' * 5:>10}')
+    print('-=' * 20)
+
+cabecalho()
+cal_area()
