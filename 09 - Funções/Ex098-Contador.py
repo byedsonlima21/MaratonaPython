@@ -27,6 +27,8 @@ def cont2():
     fim = int(input('Fim: '))
     passo = int(input('Passo: '))
 
+    if passo < 0:
+        passo *= -1
     if passo == 0:
         passo = 1
 
@@ -43,6 +45,4 @@ def cont2():
             sleep(0.5)
     print('Fim')
 
-cont()
-cont1()
 cont2()
