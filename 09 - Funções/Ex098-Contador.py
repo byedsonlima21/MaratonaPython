@@ -34,13 +34,15 @@ def cont2():
 
     if inicio < fim:
         for n in range(inicio, fim + 1, passo):
-            print(f'{n}', end=' ')
+            print(f'{n}', end=' ', flush=True)
             sleep(0.5)
-        print()
+        print('Fim')
     else:
-        for n in range(inicio, fim - 1, passo):
-            print(f'{n}', end=' ')
+        for n in range(inicio, fim - 1, -passo):
+            print(f'{n}', end=' ', flush=True)
             sleep(0.5)
-    print()
+    print('Fim')
 
+cont()
+cont1()
 cont2()
