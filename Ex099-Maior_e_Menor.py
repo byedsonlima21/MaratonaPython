@@ -10,3 +10,5 @@ def verificador(*num):
 verificador(1, 5, 7)
 print()
 verificador(8, 6, 9, 0)
+print()
+verificador(8, 3, 7, 6, 9, 0)
