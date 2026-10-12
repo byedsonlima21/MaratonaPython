@@ -1,9 +1,11 @@
 def fatorial(a=1, show=False):
-    print('—'*25)
     """
+    -> Calcule o fatorial de um número
     n é o número a ser calculado em fatorial
-    :return:
+    show=True (opcional): mostra ou não a conta
+    :return: o resultado do fatorial
     """
+    print('—'*25)
     f = 1
 
     for c in range(a, 0, -1):
@@ -18,3 +20,5 @@ def fatorial(a=1, show=False):
 
 print(fatorial(5, True))
 print(fatorial(7, False))
+
+help(fatorial)
