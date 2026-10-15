@@ -14,7 +14,7 @@ def cabecalho(msg, cor='padrao'):
     tam = len(msg) + 10
     print(cores[cor], end='')
     print('~' * tam)
-    print(f'{msg}')
+    print(f'{msg.center(tam)}')
     print('~' * tam)
     print(cores['padrao'], end='')
 
