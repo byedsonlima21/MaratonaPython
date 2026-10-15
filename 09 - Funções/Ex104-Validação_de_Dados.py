@@ -7,7 +7,7 @@ def leiaint(a):
             return valor
 
         else:
-            print('\033[31mERRO! Não é número inteiro\033[m')
+            print('\033[31mERRO! Não é número.\033[m')
         break
 
 n = leiaint('Diga um número: ')
