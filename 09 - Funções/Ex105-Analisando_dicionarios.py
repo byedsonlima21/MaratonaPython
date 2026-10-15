@@ -15,8 +15,6 @@ def notas(*num, sit=False):
 
     return d
 
-
-
 n = notas(8, 6, 4.8, 7.7, sit=True)
 print(n)
 
