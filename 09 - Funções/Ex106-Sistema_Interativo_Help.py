@@ -7,7 +7,7 @@ cores = {
     'amarelo': '\033[0;30;43m',
     'azul': '\033[0;30;44m',
     'roxo': '\033[0;30;45m',
-    'branco': '\033[0;30m'
+    'branco': '\033[0;40m'
 }
 
 def cabecalho(msg, cor='padrao'):
@@ -21,7 +21,9 @@ def cabecalho(msg, cor='padrao'):
 def ajuda(a):
     cabecalho(f'Acessando o manual do comando \'{a}\'', 'azul')
     sleep(0.5)
+    print(cores['branco'], end='')
     help(a)
+    print(cores['padrao'], end='')
 
 while True:
     cabecalho('Sistema Interativo Help', 'amarelo')
