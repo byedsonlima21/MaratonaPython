@@ -6,3 +6,9 @@ def triplo(v):
 
 def converter_dolar(v):
     return v / 5.07
+
+def aumentar(v):
+    return v + (v * 0.1)
+
+def diminuir(v):
+    return v - (v * 0.1)
