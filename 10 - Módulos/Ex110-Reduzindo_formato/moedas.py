@@ -31,13 +31,16 @@ def diminuir(v = 0, taxa1= 0, formato = True):
 def moeda(v = 0, moeda = 'R$'):
     return f'{moeda}{v:.2f}'.replace('.', ',')
 
+def tratamento(v):
+    txt = v
+
 def resumo(v, aumento = 10, promo = 5):
     print("~" * 30)
     print(f"{'Resumo do valor':^30}")
     print("~" * 30)
-    print(f"Valor:{moeda(v)}")
-    print(f"Dobro do Preço: {dobro(v, formato=True)}")
-    print(f"Metade do preço: \t\t{triplo(v, formato=True)}")
-    print(f"Em dólar: \t\t\t\t{converter_dolar(v, formato=True)}")
-    print(f"Aumentado em {aumento}%: \t\t\t\t{aumentar(v, formato=True)}")
-    print(f"Diminuido em {promo}%: \t\t\t\t{diminuir(v, formato=True)}")
+    print(f"Valor: \t\t\t\t{moeda(v)}")
+    print(f"Dobro do Preço: \t{dobro(v, formato=True)}")
+    print(f"Metade do preço: \t{triplo(v, formato=True)}")
+    print(f"Em dólar: \t\t\t{converter_dolar(v, formato=True)}")
+    print(f"Aumentado em {aumento}%: \t{aumentar(v, formato=True)}")
+    print(f"Diminuído em {promo}%: \t{diminuir(v, formato=True)}")
