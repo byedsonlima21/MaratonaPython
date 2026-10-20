@@ -27,4 +27,4 @@ def leiareal(a):
 n = leiaint('Diga um número Inteiro: ')
 m = leiareal("Digite número um Real: ")
 print(f'Você digitou o número {n} como Inteiro \
-e {m} como Real')
+e {m:.2f} como Real')
