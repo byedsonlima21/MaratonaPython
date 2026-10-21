@@ -31,9 +31,9 @@ def ver_pessoas():
     sleep(0.4)
     print(f'{"Nome":<10}{"Idade":>10}')
     for v in ppl:
-        for k in v:
+        for i, k in v.items():
             print(f'{k}', end='')
-        print(f'{v}', end='')
+        #print(f'{v}', end='')
     print()
 
 def cadastro():
