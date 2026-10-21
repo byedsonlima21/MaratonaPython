@@ -15,18 +15,19 @@ def leiaint(a):
             print('\033[1;31mO usuário decidiu não informar os dados.\033[m')
             return 0
 
+def cabecalho(txt):
+    print('-=' * 20)
+    print(f'{txt}'.center(40))
+    print('-=' * 20)
+
 def menu():
-    print('-=' * 20)
-    print('MENU PRINCIPAL'.center(40))
-    print('-=' * 20)
+    cabecalho("MENU PRINCIPAL")
     print("""1 - Ver pessoas cadastradas \
         \n2 - Cadastrar uma pessoa \
         \n3 - Sair do sistema""")
 
 def ver_pessoas():
-    print('-=' * 20)
-    print(f'{"OPÇÃO 1":^40}')
-    print('-=' * 20)
+    cabecalho("OPÇÃO 1")
     sleep(0.4)
     print(f'{"Nome":<10}{"Idade":>10}')
     for v in ppl:
@@ -36,9 +37,7 @@ def ver_pessoas():
     print()
 
 def cadastro():
-    print('-=' * 20)
-    print(f'{"OPÇÃO 2":^40}')
-    print('-=' * 20)
+    cabecalho("OPÇÃO 2")
     sleep(0.4)
     pessoas['Nome'] = (input('Nome: ')).title()
     pessoas['Idade'] = (input('Idade: '))
@@ -46,8 +45,6 @@ def cadastro():
 
 
 def sair():
-    print('-=' * 20)
-    print(f'{"OPÇÃO 3":^40}')
-    print('-=' * 20)
+    cabecalho("OPÇÃO 3")
     sleep(0.5)
     print('\033[31mSaindo do sistema...\033[m')
