@@ -1,18 +1,18 @@
-import Ex115_Menu
+from Ex115_Menu import *
 from time import sleep
 
 while True:
-    Ex115_Menu.menu()
+    menu()
     sleep(0.3)
-    n = input("Escolha uma opção: ").strip()
+    n = leiaint("Escolha uma opção: ")
 
     n = int(n)
     if n == 1:
-        Ex115_Menu.ver_pessoas()
+        ver_pessoas()
     elif n == 2:
-        Ex115_Menu.cadastro()
+        cadastro()
     elif n == 3:
-        Ex115_Menu.sair()
+        sair()
         break
     else:
         print('-='*20)

@@ -3,6 +3,18 @@ from time import sleep
 ppl = []
 pessoas = dict()
 
+def leiaint(a):
+    while True:
+        try:
+            valor = int(input(a))
+            return valor
+
+        except (ValueError, TypeError):
+            print('\033[1;31mO Tipo do valor digitado é Inválido!\033[m')
+        except KeyboardInterrupt:
+            print('\033[1;31mO usuário decidiu não informar os dados.\033[m')
+            return 0
+
 def menu():
     print('-=' * 20)
     print('MENU PRINCIPAL'.center(40))
