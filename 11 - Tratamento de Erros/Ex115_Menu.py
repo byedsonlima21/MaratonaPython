@@ -19,6 +19,6 @@ def cabecalho(txt):
 
 def menu():
     cabecalho("MENU PRINCIPAL")
-    print("""1 - Ver pessoas cadastradas \
-        \n2 - Cadastrar uma pessoa \
-        \n3 - Sair do sistema""")
+    print("""1 - Ver pessoas cadastradas
+2 - Cadastrar uma pessoa
+3 - Sair do sistema""")
