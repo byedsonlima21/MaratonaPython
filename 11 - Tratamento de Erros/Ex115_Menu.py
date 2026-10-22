@@ -22,9 +22,3 @@ def menu():
     print("""1 - Ver pessoas cadastradas \
         \n2 - Cadastrar uma pessoa \
         \n3 - Sair do sistema""")
-
-#
-
-#
-
-#
