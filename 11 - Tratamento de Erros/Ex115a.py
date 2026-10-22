@@ -13,7 +13,6 @@ while True:
     sleep(0.3)
     n = leiaint("Escolha uma opção: ")
 
-    n = int(n)
     if n == 1:
         lerArquivo(arq)
     elif n == 2:
