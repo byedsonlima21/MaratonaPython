@@ -1,5 +1,13 @@
 from Ex115_Menu import *
+from Ex115b_aquivo import *
 from time import sleep
+
+
+arq = 'cursoemvideo'
+
+if not arquivoExiste(arq):
+    criarArquivo(arq)
+
 
 while True:
     menu()
