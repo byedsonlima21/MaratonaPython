@@ -8,7 +8,6 @@ arq = 'cursoemvideo'
 if not arquivoExiste(arq):
     criarArquivo(arq)
 
-
 while True:
     menu()
     sleep(0.3)
@@ -16,11 +15,14 @@ while True:
 
     n = int(n)
     if n == 1:
-        ver_pessoas()
+        lerArquivo(arq)
     elif n == 2:
-        cadastro()
+        cabecalho('NOVO CADASTRO')
+        nome = str(input('Nome: ')).title()
+        idade = leiaint('Idade: ')
+        cadastrar(arq, nome, idade)
     elif n == 3:
-        sair()
+        cabecalho("Saindo do sistema...")
         break
     else:
         print('-='*20)

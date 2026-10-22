@@ -1,8 +1,5 @@
 from time import sleep
 
-ppl = []
-pessoas = dict()
-
 def leiaint(a):
     while True:
         try:
@@ -26,25 +23,8 @@ def menu():
         \n2 - Cadastrar uma pessoa \
         \n3 - Sair do sistema""")
 
-def ver_pessoas():
-    cabecalho("OPÇÃO 1")
-    sleep(0.4)
-    print(f'{"Nome":<10}{"Idade":>10}')
-    for v in ppl:
-        for i, k in v.items():
-            print(f'{k}', end='')
-        #print(f'{v}', end='')
-    print()
+#
 
-def cadastro():
-    cabecalho("OPÇÃO 2")
-    sleep(0.4)
-    pessoas['Nome'] = (input('Nome: ')).title()
-    pessoas['Idade'] = (input('Idade: '))
-    ppl.append(pessoas.copy())
+#
 
-
-def sair():
-    cabecalho("OPÇÃO 3")
-    sleep(0.5)
-    print('\033[31mSaindo do sistema...\033[m')
+#
