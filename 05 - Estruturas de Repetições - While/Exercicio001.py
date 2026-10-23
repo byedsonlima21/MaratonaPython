@@ -6,11 +6,11 @@ while True:
     print()
     break
 
+
+# Sem usar o for
 name = 'José Marcos da Silva'
 i = 0
 
-
-# Sem usar o for
 while i < len(name):
     print(f'{name[i]}*', end='')
     i += 1
