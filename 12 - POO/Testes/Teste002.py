@@ -15,5 +15,6 @@ class MinhaClasse:
 # Declaração de objetos
 p1 = MinhaClasse('Edson', 22)
 p1.aniversario()
+
 p2 = MinhaClasse('Adylla', 23)
 print(f'{p1.mensagem()} e {p2.mensagem()}')
