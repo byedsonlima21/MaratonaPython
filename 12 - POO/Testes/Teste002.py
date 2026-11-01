@@ -1,9 +1,9 @@
 # Declaração de classe
 class MinhaClasse:
-    def __init__(self, n, i):     #Método Construtor
+    def __init__(self, nome, idade):     #Método Construtor
         # Atributos de Instância
-        self.nome = n
-        self.idade = i
+        self.nome = nome
+        self.idade = idade
 
     # Métodos de Instância
     def aniversario(self):
