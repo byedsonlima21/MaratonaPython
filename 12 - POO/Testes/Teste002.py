@@ -9,7 +9,7 @@ class MinhaClasse:
     def aniversario(self):
         self.idade += 1
 
-    def __str__(self):
+    def __str__(self):    #DUNDER METHOD
         return f"{self.nome} é um Gafanhoto e tem {self.idade} anos"
 
     def __getstate__(self):
