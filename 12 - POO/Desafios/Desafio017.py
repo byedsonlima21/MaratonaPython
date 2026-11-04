@@ -7,9 +7,12 @@ class Produto:
         self.valor = valor
 
     def etiqueta(self):
-        caixa = Panel(f'{self.nome:^30}\n{"":-^30}\n{self.valor:.^30,.2f}', title="Produto",width=35)
-        return caixa
+        valor = f'  R${self.valor:,.2f}  '
+        caixa = Panel(f'{self.nome:^30}\n{"":-^30}\n{valor:-^30}', title="Produto",width=35)
+        print(caixa)
 
 
-p1 = Produto('Mouse', 135)
-print(p1.etiqueta())
+p1 = Produto('Mouse', 1_350.14)
+p2 = Produto('Iphone de Edson', 3_298.05)
+p1.etiqueta()
+p2.etiqueta()
