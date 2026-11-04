@@ -7,7 +7,7 @@ class Churrasco:
         self.qnt = qnt
 
     def analise(self):
-        qnt_carne = self.qnt * 0.494
+        qnt_carne = self.qnt * 0.4
         preco_total = qnt_carne * 82.42
         dados = Panel(f'{""}\nAnalisando o [green]{self.titulo}[/] com [blue]{self.qnt} convidados[/]\n'
                       f'Cada convidado comerá 0.4kg de carne e cada kg custa R$82,42\n'
@@ -17,6 +17,6 @@ class Churrasco:
 
 
 c1 = Churrasco('Carne com Friends', 15)
-c2 = Churrasco('Casamento da João', 84)
+c2 = Churrasco('Casamento do João', 84)
 c1.analise()
 c2.analise()
