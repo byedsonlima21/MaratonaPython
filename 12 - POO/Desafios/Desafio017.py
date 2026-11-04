@@ -13,6 +13,8 @@ class Produto:
 
 
 p1 = Produto('Mouse', 1_350.14)
-p2 = Produto('Iphone de Edson', 3_298.05)
+p2 = Produto('Iphone 17 Pro Max', 3_298.05)
+p3 = Produto('Notebook', 4_598.98)
 p1.etiqueta()
 p2.etiqueta()
+p3.etiqueta()
