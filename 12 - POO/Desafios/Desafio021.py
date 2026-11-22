@@ -22,8 +22,8 @@ c1.escrever('Oi a todos')
 c1.destampar()
 c1.quebrar_linha(1)
 c1.escrever('E ai mano, como vai?')
-
 c1.quebrar_linha(1)
+
 c2 = Caneta('red')
 c2.escrever('Nao devo nada a ninguém')
 c2.destampar()
